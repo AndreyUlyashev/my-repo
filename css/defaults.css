@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after { box-sizing: border-box; }
+
+html { height: 100%; margin: 0; padding: 0; }
+body { background: #fff; color: #767676; font-family: Arial, sans-serif; font-size: 16px; min-height: 100.1%; min-width: 980px; line-height: 1.4em; margin: 0; position: relative; }
+
+a { -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; color: #4191df; }
+a:link { cursor: pointer; }
+a:visited { cursor: pointer; }
+a:hover { text-decoration: none; }
+a:active {  }
+a img { border: 0 solid; }
+
+p { margin: 22px 0 25px 0; padding: 0; }
+table { border-collapse: collapse; margin: 0; padding: 0; margin: 0 0 25px 0; }
+th { border: 0;  font-weight: bold; vertical-align: middle; padding: 5px 5px 5px 10px; text-align: left; }
+td { vertical-align: top; }
+
+ul { margin: 13px 0 20px 16px; padding: 0; }
+ol { margin: 0 0 0 20px; padding: 0; }
+li { margin: 0; padding: 0; }
+
+dt { margin: 0; padding: 0; }
+dl { margin: 0; padding: 0; }
+dd { margin: 0; padding: 0; }
+
+form { margin: 0; padding: 0; }
+fieldset { border: 0px solid; margin: 0; padding: 0; }
+label {  }
+legend { margin: 0; padding: 0; }
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+textarea { padding: 0 3px 0 3px; outline: none; font-size: 14px; font-family: 'Open Sans', sans-serif; border: 1px solid #999; background: #fff; color: #767676; }
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password] { height: 22px; width: 30px; text-align: center; }
+input[type=text]:focus { color: #969696; }
+
+textarea { height: 160px; padding-top: 10px; }
+
+:-moz-placeholder { color: #4292df; }
+::-moz-placeholder { color: #4292df; }
+::-webkit-input-placeholder { color: #4292df; }
+:-ms-input-placeholder { color: #4292df; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { padding: 0; }
+
+h1 { font-size: 33px; margin: 5px 0 10px 0; font-weight: normal; }
+h2 { font-size: 24px; margin: 30px 0 15px 0; font-weight: normal; }
+h3 { font-size: 18px; margin: 45px 0 25px 0; }
+h4 { font-size: 14px; margin: 45px 0 15px 0; }
+
+hr { border-bottom: 2px solid #e8e8e8; border-top: transparent; margin: 25px 0 23px 0; }
+
+abbr,
+acronym,
+dfn { font-style: italic; }
+
+article,
+section { margin: 0; padding: 0; }

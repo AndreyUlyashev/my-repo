@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html ng-app="summApp">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/defaults.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script src="js/summ.js"></script>
+</head>
+<body>
+
+    
+<div class="scale-sum" ng-controller="NumberListController as numberList">
+  
+  <div id="scale-sum-result">{{ numberList.firstNumeric }} + {{ numberList.secondNumeric }} = <input type="text" name="" value="" id="summary-input" ng-model="numberList.summaryInput" ng-change="numberList.calculateSumm(numberList.firstNumeric, numberList.secondNumeric, 'summary-input')"></div>
+  
+  <form class="ask-form">
+    <span class="ask-form-arrow number-0" id="ask-form-arrow-number-0">
+      <input type="text" name="" value="" id="ask-form-first-input" ng-model="numberList.firstNumeric" ng-change="numberList.checkInput(numberList.firstNumeric, numberList.firstNumber, 'ask-form-first-input')">
+      <img src="img/ellipsoid-arrow.png" width="{{ numberList.firstNumber * numberList.itemWidth }}">
+    </span>
+    <span class="ask-form-arrow number-1" id="ask-form-arrow-number-1" style="display: none;">
+      <input type="text" name="" value="" id="ask-form-second-input" ng-model="numberList.secondNumeric" ng-change="numberList.checkInput(numberList.secondNumeric, numberList.secondNumber, 'ask-form-second-input')">
+      <img src="img/ellipsoid-arrow.png" width="{{ numberList.secondNumber * numberList.itemWidth }}">
+    </span>
+  </form>
+  <table class="numbers">
+    <tr class="numbers-row">
+      <td class="numbers-td-first">&nbsp;</td>
+      <td class="numbers-td">
+        <span class="number-item" ng-repeat="number in numberList.numbers" style="{{ number.style }}">{{ number.numeric }}</span>
+      </td>
+      <td class="numbers-td-last"><div class="numbers-td-last-arrow"></div></td>
+    </tr>
+  </table>  
+</div>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+.scale-sum {
+  padding: 100px 0 0 25px;
+}
+
+.ask-form {
+  padding: 0 0 0 31px;
+  margin: 0 0 -14px 0;
+  font-size: 0;
+}
+
+.ask-form-arrow {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ask-form-arrow img {
+  vertical-align: botton;
+}
+
+.ask-form-arrow input {
+  position: absolute;
+  left: 42%;
+  top: -27%;
+  font-weight: bold;
+}
+
+#scale-sum-result {
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+  display: none;
+}
+
+#summary-input {
+  font-weight: bold;
+  font-size: 30px;
+  width: 40px;
+  height: 30px;
+}
+
+.numbers { 
+  height: 83px; 
+  background: url('../img/background.png') no-repeat; 
+  background-size: 100% 83px;
+  color: #393938;
+}
+
+.numbers-td-first {
+  width: 30px
+}
+
+.numbers-td-last {
+  width: 30px
+  position: absolute;
+}
+
+.numbers-td-last-arrow {
+  background: url('../img/arrow.png') no-repeat;
+  width: 36px;
+  height: 22px;
+  position: relative;
+  left: -30px;
+  top: 8px;
+}
+
+.numbers-td {
+  background: url('../img/scale.png') repeat-x 0 9px;
+
+}
+
+.number-item {
+  width: 39px;
+  display: inline-block;
+  text-align: center;
+  margin: 42px 0 0 0;
+  font-weight: bold;
+  position: relative;
+  left: -20px;
+}
